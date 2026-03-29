@@ -1,17 +1,16 @@
 # AI-ML
 Vityarthi Project Winter Semester
-# 🩺 Diabetes Prediction with K-Nearest Neighbours
+#  Diabetes Prediction with K-Nearest Neighbours
 
 A supervised machine learning project that predicts whether a patient is diabetic based on clinical diagnostic measurements, using the K-Nearest Neighbours (KNN) algorithm with cross-validated hyperparameter tuning.
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
-- [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
 - [How It Works](#how-it-works)
@@ -61,7 +60,7 @@ The project uses the **Pima Indians Diabetes Dataset**, originally from the Nati
 | 7 | `DiabetesPedigreeFunction` | Genetic likelihood score based on family history |
 | 8 | `Age` | Age in years |
 
-> ⚠️ **Note:** Several features contain `0` values that are biologically implausible (e.g. a BMI of 0). These represent missing measurements, not true zeros. The current implementation does not impute them — see [Limitations](#limitations--future-work).
+> **Note:** Several features contain `0` values that are biologically implausible (e.g. a BMI of 0). These represent missing measurements, not true zeros. The current implementation does not impute them — see [Limitations](#limitations--future-work).
 
 You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database) and place it in the project root as `diabetes.csv`.
 
@@ -75,15 +74,8 @@ diabetes-knn/
 ├── diabetes.csv          # Dataset (download separately — see above)
 ├── diabetes_knn.py       # Main script
 ├── README.md             # This file
-└── requirements.txt      # Python dependencies
+
 ```
-
----
-
-## Requirements
-
-- Python 3.8 or higher
-- pip
 
 **Python packages:**
 
@@ -230,12 +222,4 @@ In a medical screening context, **recall on the positive class (diabetic)** is t
 | No feature selection | Investigate removing correlated features (e.g. SkinThickness + BMI) |
 | No prediction interface | Wrap the trained model in a Flask API or Streamlit app |
 
----
 
-## License
-
-This project is released under the [MIT License](LICENSE).
-
----
-
-*Dataset source: Smith, J.W. et al. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. Proceedings of the Symposium on Computer Applications and Medical Care.*
